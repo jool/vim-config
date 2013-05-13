@@ -32,7 +32,8 @@ filetype plugin indent on
 
 set t_Co=256
 colorscheme wombat256
-
+syntax match Tab /\t/
+hi Tab gui=underline guifg=blue ctermbg=blue
 highlight ExtraWhiteSpace ctermbg=red guibg=red
 " Show trailing whitespace and spaces before a tab:
 autocmd Syntax * syn match ExtraWhiteSpace /\s\+$| \+\ze|t/
